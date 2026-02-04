@@ -32,8 +32,9 @@ Now, imagine the Chef installs a conveyor belt (the DMA controller) between the 
 *Tip: Use **Double Buffering** with DMA to eliminate screen flickering!*
 
 
-<img src="https://github.com/user-attachments/assets/b3917d41-6550-48d1-8fb1-254ddc60ca46" width="100" />
+<img src="https://github.com/user-attachments/assets/b3917d41-6550-48d1-8fb1-254ddc60ca46" width="200" />
+<img src="https://github.com/user-attachments/assets/27ec0fea-4cb4-4d94-94ae-affed79888c0" width="200" />
 
-![Image](https://github.com/user-attachments/assets/27ec0fea-4cb4-4d94-94ae-affed79888c0)
+
 
 
