@@ -35,9 +35,33 @@ In CubeMX I've had luck configuring the clock like this:
 
 <img src="https://github.com/user-attachments/assets/b3917d41-6550-48d1-8fb1-254ddc60ca46" width="800" />
 
-
+Be sure to set the Clock Polarity to high in this location:
 
 <img src="https://github.com/user-attachments/assets/27ec0fea-4cb4-4d94-94ae-affed79888c0" width="400" />
+
+Additional Optimization - Increase SPI Speed
+In your main.c, try changing the SPI prescaler from 4 to 2:
+
+Steps to Enable DMA in CubeMX
+
+How to Enable DMA for SPI
+Here's what you need to do:
+1. Configure DMA in STM32CubeIDE/CubeMX
+In your .ioc file or CubeMX configuration:
+
+Go to SPI1 settings
+Under "DMA Settings", click "Add"
+Add SPI1_TX (you only need TX for displays)
+Set DMA Request to normal priority or high priority
+Set Mode to "Normal" (not Circular)
+Set Data Width to "Byte"
+
+2. Enable DMA Interrupts
+In NVIC Settings, enable the DMA channel interrupt for your SPI TX channel (likely DMA1 Channel 1 or 2).
+
+Memory Usage Note
+With HOR_LEN = 48, the buffer uses 26,880 bytes of RAM. Your STM32G030C8T6 has 8KB RAM total, so this uses about 3.3KB. If you need more RAM for other things, reduce HOR_LEN to 24 or 16.
+
 
 
 
