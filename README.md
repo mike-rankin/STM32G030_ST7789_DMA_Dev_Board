@@ -42,7 +42,7 @@ Be sure to set the Clock Polarity to high in this location:
 Additional Optimization - Increase SPI Speed
 In your main.c, try changing the SPI prescaler from 4 to 2:
 
-Steps to Enable DMA in CubeMX
+# Steps to Enable DMA in CubeMX
 
 How to Enable DMA for SPI
 Here's what you need to do:
