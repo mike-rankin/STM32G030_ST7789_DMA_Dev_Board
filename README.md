@@ -40,11 +40,11 @@ Be sure to set the Clock Polarity to high in this location:
 <img src="https://github.com/user-attachments/assets/27ec0fea-4cb4-4d94-94ae-affed79888c0" width="400" />
 
 # Steps to Enable DMA in CubeMX
-
+*   **
 How to Enable DMA for SPI
 1. Configure DMA in STM32CubeIDE/CubeMX
 In your .ioc file or CubeMX configuration:
-*   **
+
 Go to SPI1 settings
 Under "DMA Settings", click "Add"
 Add SPI1_TX (you only need TX for displays)
