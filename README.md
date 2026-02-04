@@ -39,9 +39,6 @@ Be sure to set the Clock Polarity to high in this location:
 
 <img src="https://github.com/user-attachments/assets/27ec0fea-4cb4-4d94-94ae-affed79888c0" width="400" />
 
-Additional Optimization - Increase SPI Speed
-In your main.c, try changing the SPI prescaler from 4 to 2:
-
 # Steps to Enable DMA in CubeMX
 
 How to Enable DMA for SPI
@@ -62,7 +59,8 @@ In NVIC Settings, enable the DMA channel interrupt for your SPI TX channel (like
 Memory Usage Note
 With HOR_LEN = 48, the buffer uses 26,880 bytes of RAM. Your STM32G030C8T6 has 8KB RAM total, so this uses about 3.3KB. If you need more RAM for other things, reduce HOR_LEN to 24 or 16.
 
-
+Additional Optimization - Increase SPI Speed
+In your main.c, try changing the SPI prescaler from 4 to 2:
 
 
 
