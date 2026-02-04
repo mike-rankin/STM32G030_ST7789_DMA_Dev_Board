@@ -2,7 +2,7 @@
 
 ![Image](https://github.com/user-attachments/assets/e3d956b0-4ead-4d27-bd57-9999583a4c13)
 
-## DMA vs. Non-DMA for TFT Displays
+## DMA vs. Non-DMA for TFT Displays using a cooking analogy
 
 When driving a TFT display with an STM32, there are two main ways to move pixel data: **Non-DMA (Polling)** and **DMA (Direct Memory Access)**.
 
